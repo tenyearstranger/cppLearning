@@ -5,11 +5,13 @@
 所有学习代码都在 `lessons/` 文件夹中
 
 ### 第一阶段：基础语法 (已有基础可快速过)
+
 - [1_基础语法与变量类型](./lessons/01_basics.cpp)
 - [2_控制流](./lessons/02_control_flow.cpp)
 - [3_函数与作用域](./lessons/03_functions.cpp)
 
 ### 第二阶段：C++核心特性（重点）
+
 - [4_指针与引用](./lessons/04_pointers_references.cpp) ⭐
 - [5_类与对象](./lessons/05_classes.cpp)
 - [6_内存管理与RAII](./lessons/06_memory_management.cpp) ⭐
@@ -17,18 +19,21 @@
 - [8_继承与多态](./lessons/08_inheritance_polymorphism.cpp)
 
 ### 第三阶段：高级特性
+
 - [9_模板与泛型编程](./lessons/09_templates.cpp) ⭐
 - [10_标准库容器](./lessons/10_stl_containers.cpp)
 - [11_算法与迭代器](./lessons/11_stl_algorithms.cpp)
 - [12_异常处理](./lessons/12_exceptions.cpp)
 
 ### 第四阶段：现代C++（C++11/14/17/20）
+
 - [14_智能指针](./lessons/14_smart_pointers.cpp) ⭐
 - [15_移动语义](./lessons/15_move_semantics.cpp) ⭐
 - [16_Lambda表达式](./lessons/16_lambdas.cpp)
 - [17_现代C++特性](./lessons/17_modern_cpp.cpp)
 
 ### 第五阶段：实战
+
 - [18_完整项目示例](./lessons/18_project_example.cpp)
 
 ## 快速参考

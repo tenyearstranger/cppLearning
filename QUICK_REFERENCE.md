@@ -3,6 +3,7 @@
 ## 编译与运行
 
 ### Windows (PowerShell/CMD)
+
 ```bash
 # 单个文件
 g++ -std=c++17 -o program 01_basics.cpp
@@ -14,6 +15,7 @@ build.bat run 01_basics
 ```
 
 ### Linux/Mac
+
 ```bash
 # 单个文件
 g++ -std=c++17 -o program 01_basics.cpp
@@ -27,6 +29,7 @@ bash build.sh run 01_basics
 ## 快速查找表
 
 ### 数据类型
+
 | 类型     | 说明       | 范围           |
 | -------- | ---------- | -------------- |
 | `char`   | 字符       | -128 ~ 127     |
@@ -39,6 +42,7 @@ bash build.sh run 01_basics
 | `string` | 字符串     | 动态长度       |
 
 ### 指针与引用对比
+
 | 特性         | 指针     | 引用     |
 | ------------ | -------- | -------- |
 | 可以为null   | ✓        | ✗        |
@@ -48,6 +52,7 @@ bash build.sh run 01_basics
 | sizeof       | 指针大小 | 对象大小 |
 
 ### 智能指针选择
+
 | 场景       | 推荐         |
 | ---------- | ------------ |
 | 单个所有者 | `unique_ptr` |
@@ -56,6 +61,7 @@ bash build.sh run 01_basics
 | RAII资源   | `unique_ptr` |
 
 ### STL容器对比
+
 | 容器          | 随机访问 | 头部插删 | 尾部插删 | 中间插删 | 查找    |
 | ------------- | -------- | -------- | -------- | -------- | ------- |
 | vector        | O(1)     | O(n)     | O(1)     | O(n)     | O(n)    |
@@ -66,6 +72,7 @@ bash build.sh run 01_basics
 | map           | -        | -        | -        | O(logn)  | O(logn) |
 
 ### 常用STL算法
+
 ```cpp
 find(begin, end, value)              // 查找值
 find_if(begin, end, predicate)       // 条件查找
@@ -83,6 +90,7 @@ for_each(begin, end, func)           // 遍历
 ## C++版本对比
 
 ### C++11 (关键)
+
 - `auto` 类型推导
 - 范围for循环
 - Lambda表达式
@@ -94,6 +102,7 @@ for_each(begin, end, func)           // 遍历
 - 可变参数模板
 
 ### C++17 (推荐)
+
 - `std::optional`
 - `std::variant`
 - 结构化绑定
@@ -103,6 +112,7 @@ for_each(begin, end, func)           // 遍历
 - 并行算法
 
 ### C++20 (未来)
+
 - Concepts (概念)
 - Coroutines (协程)
 - Ranges (范围库)
@@ -111,6 +121,7 @@ for_each(begin, end, func)           // 遍历
 ## 常见错误与解决
 
 ### 内存问题
+
 ```cpp
 // ✗ 内存泄漏
 int* p = new int(10);
@@ -121,6 +132,7 @@ auto p = make_unique<int>(10);  // 自动清理
 ```
 
 ### 拷贝/移动
+
 ```cpp
 // ✗ 不必要的拷贝
 vector<int> v1 = {1, 2, 3};
@@ -131,6 +143,7 @@ vector<int> v2 = move(v1);  // 移动，高效
 ```
 
 ### 异常安全
+
 ```cpp
 // ✗ 资源泄漏
 void process() {
@@ -175,7 +188,7 @@ g++ -std=c++17           # 指定C++标准
 
 ## 推荐学习资源
 
-- Cppreference: https://en.cppreference.com/
+- Cppreference: [https://en.cppreference.com/](https://en.cppreference.com/)
 - Effective C++ 系列书籍
 - C++ Primer (第5版)
 - Modern C++ (Herb Sutter)
