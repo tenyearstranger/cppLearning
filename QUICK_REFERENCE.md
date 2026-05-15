@@ -188,7 +188,7 @@ g++ -std=c++17           # 指定C++标准
 
 ## 推荐学习资源
 
-- Cppreference: [https://en.cppreference.com/](https://en.cppreference.com/)
+- Cppreference: <https://en.cppreference.com/>
 - Effective C++ 系列书籍
 - C++ Primer (第5版)
 - Modern C++ (Herb Sutter)
